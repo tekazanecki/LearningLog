@@ -1,5 +1,19 @@
 {% extends "learning_logs/base.html" %}
 
+{% block header %}
+<div class="jumbotron">
+    <h1>Monitoruj postępy w nauce</h1>
+</div>
+{% endblock header %}
+
 {% block content %}
-<p>Learning Log pomaga w monitorowaniu postępów w nauce</p>
+<h2>
+    <a href="{% url 'users:register' %}">Zarejstruj konto</a>
+     aby rozpocząć korzystanie z aplikacji Learning Log oraz
+     wyświetlić lisstę poznawanych tematów
+</h2>
+<h2>
+    Jeśli nauczysz się czegoś nowego, to w odpowiednim teamacie
+    dodaj wpis podsumowujący to, czego się włąsnie nauczyłeś.
+</h2>
 {% endblock content %}
